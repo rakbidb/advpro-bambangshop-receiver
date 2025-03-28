@@ -18,7 +18,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
     -   [✅] Commit: `Implement subscribe function in Notification controller.`
     -   [✅] Commit: `Implement unsubscribe function in Notification service.`
     -   [✅] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
+    -   [✅] Commit: `Implement receive_notification function in Notification service.`
     -   [ ] Commit: `Implement receive function in Notification controller.`
     -   [ ] Commit: `Implement list_messages function in Notification service.`
     -   [ ] Commit: `Implement list function in Notification controller.`
