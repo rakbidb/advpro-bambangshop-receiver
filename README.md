@@ -22,7 +22,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
     -   [✅] Commit: `Implement receive function in Notification controller.`
     -   [✅] Commit: `Implement list_messages function in Notification service.`
     -   [✅] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [✅] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -40,3 +40,15 @@ This is the place for you to write reflections:
     By default, static variables in Rust are immutable. lazy_static prevents direct mutation within the code. This is due to safety concerns. By making static variables immutable, Rust provides a thread-safe and more predictable code. Java allows mutation of content of static variable. However, this can lead to data races if not handled carefully.
 
 #### Reflection Subscriber-2
+
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+    From what I have read, we set up our app config in lib.rs (kinda like settings.py in Django). There, we set the configurations like APP_NAME or ROOT_URL (things we put in .env file) and the prefixes/default values (if there's any). We can also define a custom error message there. We also set up the singletons there.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+    Using Observer pattern eased me on adding more subscriber to the system. Whenever there's a new subscriber, they will be added to the list of subscriber on the main app. If a situation similar to the one described in the question arises, where an occurrence of the Main app is created, there shouldn't be any issue as it simply requires adapting the process of adding subscribers to the suitable API.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+
+    I have tried making my own test. Testing with Postman collection is quite easy and helpful.  We have the ability to modify the data sent in the HTTP request and then verify whether the expected response from our program is accurate.
