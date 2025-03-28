@@ -24,14 +24,14 @@ impl Display for Notification {
                 self.product_url
             );
         } else if self.status.to_uppercase().eq("DELETED") {
-            return write!(
+            return write!(f,
                 "Hello {}, we informed that our {} product called {} already sold out...",
                 self.subscriber_name,
                 self.product_type.to_lowercase(),
                 self.product_title
             );
         } else {
-            return write!(
+            return write!(f,
                 "Hello {}, let's try out {} product: {}, grab it out before the stock ran out! Check it out: {}",
                 self.subscriber_name, self.product_type.to_lowercase(), self.product_title, self.product_url
             );
